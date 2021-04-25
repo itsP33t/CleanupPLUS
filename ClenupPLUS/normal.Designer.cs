@@ -38,6 +38,7 @@ namespace CleanupPLUS
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.siticoneDragControl2 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,6 +130,10 @@ namespace CleanupPLUS
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // siticoneDragControl2
+            // 
+            this.siticoneDragControl2.TargetControl = this.pictureBox1;
+            // 
             // normal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +151,7 @@ namespace CleanupPLUS
             this.Name = "normal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "normal";
+            this.Load += new System.EventHandler(this.normal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -160,5 +166,6 @@ namespace CleanupPLUS
         private Siticone.UI.WinForms.SiticoneButton siticoneButton3;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
+        private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl2;
     }
 }

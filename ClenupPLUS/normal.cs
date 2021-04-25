@@ -13,6 +13,8 @@ namespace CleanupPLUS
 {
     public partial class normal : Form
     {
+        private string strComputerName;
+
         public normal()
         {
             InitializeComponent();
@@ -41,7 +43,14 @@ namespace CleanupPLUS
 
         private void siticoneControlBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void normal_Load(object sender, EventArgs e)
+        {
+        
+        
+
         }
     }
 }

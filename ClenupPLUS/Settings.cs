@@ -40,5 +40,10 @@ namespace CleanupPLUS
             normal normal = new normal();
             normal.Show();
         }
+
+        private void siticoneControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

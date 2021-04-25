@@ -54,7 +54,7 @@ namespace CleanupPLUS
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Settings";
             // 
@@ -73,6 +73,7 @@ namespace CleanupPLUS
             this.siticoneControlBox1.ShadowDecoration.Parent = this.siticoneControlBox1;
             this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
             this.siticoneControlBox1.TabIndex = 1;
+            this.siticoneControlBox1.Click += new System.EventHandler(this.siticoneControlBox1_Click);
             // 
             // siticoneControlBox2
             // 
@@ -110,7 +111,7 @@ namespace CleanupPLUS
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(86, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 17);
+            this.label2.Size = new System.Drawing.Size(197, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "install default font";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -122,7 +123,7 @@ namespace CleanupPLUS
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(71, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 17);
+            this.label3.Size = new System.Drawing.Size(221, 24);
             this.label3.TabIndex = 0;
             this.label3.Text = "font should look like:";
             // 
@@ -140,11 +141,11 @@ namespace CleanupPLUS
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lemon/Milk", 12.25F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 465);
+            this.label4.Location = new System.Drawing.Point(38, 465);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(338, 17);
+            this.label4.Size = new System.Drawing.Size(329, 24);
             this.label4.TabIndex = 0;
-            this.label4.Text = "version downloaded from: P33t.net";
+            this.label4.Text = "version downloaded from: Github";
             // 
             // fontDialog1
             // 
@@ -173,7 +174,7 @@ namespace CleanupPLUS
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(21, 354);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(339, 34);
+            this.label5.Size = new System.Drawing.Size(342, 48);
             this.label5.TabIndex = 5;
             this.label5.Text = "after you install font you need to \r\nrestart the app";
             // 

@@ -29,10 +29,12 @@ namespace CleanupPLUS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(understand));
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.SuspendLayout();
             // 
             // siticoneButton1
@@ -79,6 +81,10 @@ namespace CleanupPLUS
             this.label1.Text = "we\'ll open a temp folders for you. You need to delete everything on them. Its saf" +
     "e don\'t worry";
             // 
+            // siticoneDragControl1
+            // 
+            this.siticoneDragControl1.TargetControl = this;
+            // 
             // understand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,6 +99,7 @@ namespace CleanupPLUS
             this.Name = "understand";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "understand";
+            this.Load += new System.EventHandler(this.understand_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +110,6 @@ namespace CleanupPLUS
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
         private System.Windows.Forms.Label label1;
+        private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl1;
     }
 }

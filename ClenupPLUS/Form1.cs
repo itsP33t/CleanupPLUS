@@ -59,5 +59,10 @@ namespace ClenupPLUS
             timer4.Stop();
             timer2.Start();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
